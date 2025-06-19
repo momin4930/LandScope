@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LandScope</title>
-
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-        <link href="style.css" type="text/css" rel="Stylesheet" />
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <title>LandScope | Premium Real Estate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="style.css" type="text/css" rel="Stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="header-hero-container">
-        <header>
+        <header class="animate__animated animate__fadeIn">
             <div class="flex container">
                 <a href="#" id="logo">LANDSCOPE</a>
                 <nav>
@@ -24,426 +22,752 @@
                         <span class="strip"></span>
                     </button>
 
-                    <ul id="nav-manu">
+                    <ul id="nav-menu">
                         <li><a href="#hero" class="active">Home</a></li>
                         <li><a href="#properties">Properties</a></li>
                         <li><a href="#agents">Agents</a></li>
-                        <li><a href="#foooter">About</a></li>
-                        <li><a href="#testimonials">News</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="#" class="btn-primary">Get Started</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <section id="hero">
-            <div class="fade"></div>
-            <div class="hero-text">
-                <h1>Buy and sell real estate properties</h1>
-                <br>
-                <p>Discover the easiest way to buy and sell real estate properties with LandScope. Whether you're looking to invest in a new property or sell an existing one, our platform provides a secure and seamless experience. Explore a wide range of listings, from residential to commercial properties, all tailored to meet your needs. Find your dream property or the ideal buyer with ease on LandScope</p>
+        <section id="hero" class="animate__animated animate__fadeIn">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Discover Your <span class="highlight">Dream</span> Property</h1>
+                <p class="subtitle">Luxury residences curated for the discerning buyer. Experience unparalleled service in your property journey.</p>
+                <div class="hero-buttons">
+                    <a href="#properties" class="btn-primary">Explore Properties</a>
+                    <a href="#contact" class="btn-secondary">Contact Agent</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span></span>
             </div>
         </section>
     </div>
 
-    <section id="how-it-works">
+    <section id="features" class="animate__animated animate__fadeInUp">
         <div class="container">
-            <h2>How It Works</h2>
             <div class="flex">
-                <div>
-                    <span class="fas fa-home"></span>
-                    <h4>Find a Property</h4>
-                    <p>Discover the perfect property tailored to your needs.</p>
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <i class="fas fa-search-location"></i>
+                    </div>
+                    <h3>Smart Search</h3>
+                    <p>Our AI-powered platform finds properties matching your exact preferences.</p>
                 </div>
-
-                <div>
-                    <span class="fas fa-dollar-sign"></span>
-                    <h4>Buy a Property</h4>
-                    <p>Explore a wide selection of properties and make your next investment with confidence.</p>
+                
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Best Deals</h3>
+                    <p>Exclusive access to off-market properties and premium listings.</p>
                 </div>
-
-                <div>
-                    <span class="fas fa-chart-line"></span>
-                    <h4>Investing.</h4>
-                    <p>Unlock new opportunities and grow your portfolio with smart real estate investments.</p>
+                
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Expert Agents</h3>
+                    <p>Industry-leading professionals with local market expertise.</p>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section id="properties">
+    <section id="properties" class="animate__animated animate__fadeIn">
         <div class="container">
-            <h2>Properties</h2>
+            <div class="section-header">
+                <h2>Featured <span class="highlight">Properties</span></h2>
+                <p>Curated selection of premium residences</p>
+            </div>
+            
             <div id="properties-slider" class="slick">
-                <div>
-                    <img src="Assets/house1.jpg" alt="Property1"/>
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxury Villa">
+                        <div class="property-badge">Premium</div>
+                    </div>
                     <div class="property-details">
-                        <p class="price">28 Million PKR</p>
-                        <span class="beds">8 beds</span>
-                        <span class="baths">8 baths</span>
-                        <span class="sqft">6000 sqft</span>
-                        <address>Street 8, I-17, Islamabad</address>
+                        <h3>Oceanview Villa</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Malibu, California</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 5 Beds</span>
+                            <span><i class="fas fa-bath"></i> 4 Baths</span>
+                            <span><i class="fas fa-vector-square"></i> 4,200 sqft</span>
+                        </div>
+                        <div class="price-container">
+                            <p class="price">$4,250,000</p>
+                            <a href="#" class="btn-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Modern Penthouse">
+                        <div class="property-badge">Luxury</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Downtown Penthouse</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Manhattan, New York</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3.5 Baths</span>
+                            <span><i class="fas fa-vector-square"></i> 3,100 sqft</span>
+                        </div>
+                        <div class="price-container">
+                            <p class="price">$3,850,000</p>
+                            <a href="#" class="btn-details">View Details</a>
+                        </div>
                     </div>
                 </div>
 
-                <div>
-                    <img src="Assets/house2.jpeg" alt="Property1"/>
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1475&q=80" alt="Suburban Estate">
+                        <div class="property-badge">Family Home</div>
+                    </div>
                     <div class="property-details">
-                        <p class="price">64 Million PKR</p>
-                        <span class="beds">12 beds</span>
-                        <span class="baths">12 baths</span>
-                        <span class="sqft">8700 sqft</span>
-                        <address>Street 10, E-15, Islamabad</address>
+                        <h3>Suburban Estate</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Beverly Hills, California</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 6 Beds</span>
+                            <span><i class="fas fa-bath"></i> 5 Baths</span>
+                            <span><i class="fas fa-vector-square"></i> 5,500 sqft</span>
+                        </div>
+                        <div class="price-container">
+                            <p class="price">$6,750,000</p>
+                            <a href="#" class="btn-details">View Details</a>
+                        </div>
                     </div>
                 </div>
 
-                <div>
-                    <img src="Assets/house3.png" alt="Property1"/>
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Modern Villa">
+                        <div class="property-badge">New</div>
+                    </div>
                     <div class="property-details">
-                        <p class="price">9 Million PKR</p>
-                        <span class="beds">4 beds</span>
-                        <span class="baths">6 baths</span>
-                        <span class="sqft">1200 sqft</span>
-                        <address>Street 12, I-14, Islamabad</address>
+                        <h3>Hillside Modern</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> San Diego, California</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-vector-square"></i> 3,800 sqft</span>
+                        </div>
+                        <div class="price-container">
+                            <p class="price">$2,950,000</p>
+                            <a href="#" class="btn-details">View Details</a>
+                        </div>
                     </div>
                 </div>
 
-                <div>
-                    <img src="Assets/house3.jpeg" alt="Property1"/>
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80" alt="Lake House">
+                        <div class="property-badge">Waterfront</div>
+                    </div>
                     <div class="property-details">
-                        <p class="price">55 Millon PKR</p>
-                        <span class="beds">10 beds</span>
-                        <span class="baths">10 baths</span>
-                        <span class="sqft">7000 sqft</span>
-                        <address>Street 1, I-12, Islamabad</address>
+                        <h3>Lakefront Retreat</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Lake Tahoe, Nevada</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 4.5 Baths</span>
+                            <span><i class="fas fa-vector-square"></i> 4,600 sqft</span>
+                        </div>
+                        <div class="price-container">
+                            <p class="price">$5,200,000</p>
+                            <a href="#" class="btn-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Mountain Chalet">
+                        <div class="property-badge">Mountain View</div>
+                    </div>
+                    <div class="property-details">
+                        <h3>Mountain Chalet</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Aspen, Colorado</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 5 Beds</span>
+                            <span><i class="fas fa-bath"></i> 4.5 Baths</span>
+                            <span><i class="fas fa-vector-square"></i> 4,800 sqft</span>
+                        </div>
+                        <div class="price-container">
+                            <p class="price">$7,900,000</p>
+                            <a href="#" class="btn-details">View Details</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <button class="rounded">View All Properties</button>
-        </div>
-    </section>
-
-    <section id="agents">
-        <div class="conatainer">
-            <h2>Agents</h2>
-            <p class="large-paragraph">Connect with experienced real estate agents on LandScope, ready to guide you through every step of your buying, selling, or investment journey. Our trusted agents bring in-depth market knowledge and personalized service to help you make the best decisions for your property goals.</p>
-
-            <div class="flex">
-                <div class="card">
-                    <img src="Assets/person1.jpg" alt="Agent1"/>
-                    <h3>Mark Butcher</h3>
-                    <p> &nbsp;&nbsp;Real Estate Agent</p>
-                </div>
-
-                <div class="card">
-                    <img src="Assets/person2.png" alt="Agent1"/>
-                    <h3>Ben Stokes</h3>
-                    <p>&nbsp;&nbsp;Real Estate Agent</p>
-                </div>
-
-                <div class="card">
-                    <img src="Assets/person3.jpg" alt="Agent1"/>
-                    <h3>Xavier Woods</h3>
-                    <p>&nbsp;&nbsp;Real Estate Agent</p>
-                </div>
-
-                <div class="card">
-                    <img src="Assets/person4.jpg" alt="Agent1"/>
-                    <h3>Chris Evans</h3>
-                    <p>&nbsp;&nbsp;Real Estate Agent</p>
-                </div>
-
-                <div class="card">
-                    <img src="Assets/person5.jpg" alt="Agent1"/>
-                    <h3>Henry Edwards</h3>
-                    <p>&nbsp;&nbsp;Real Estate Agent</p>
-                </div>
-
-                <div class="card">
-                    <img src="Assets/person6.jpg" alt="Agent1"/>
-                    <h3>Marshall Potts</h3>
-                    <p>&nbsp;&nbsp;Real Estate Agent</p>
-                </div> 
+            
+            <div class="text-center">
+                <a href="#" class="btn-primary view-all">View All Properties</a>
             </div>
         </div>
     </section>
 
-    <section id="the-best">
-        <div class="flex container">
-            <img src="Assets/house1.jpg" alt="House1">
-            <div>
-                <h2>We are the best in Real Estate</h2>
-                <p class="large-paragraph">We pride ourselves on being leaders in the real estate industry, delivering exceptional service, trusted expertise, and unmatched results. At LandScope, we prioritize your needs and strive to exceed your expectations with every property transaction.</p>
-                <p>We provide</p>
-                <ul>
-                    <li>Expert guidance and support every step of the way</li>
-                    <li>Comprehensive property listings across prime locations</li>
-                    <li>Transparent, reliable service you can count on</li>
-                    <li>Customized solutions for buyers, sellers, and investors</li>
-                    <li>A dedicated team committed to helping you succeed</li>
-                </ul>
-                <button class="rounded">Learn More</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="services">
+    <section id="agents" class="animate__animated animate__fadeIn">
         <div class="container">
-            <h2>Services</h2>
-            <div class="flex">
-                <div>
-                    <div class="fa fa-dollar-sign"></div>
-                    <div class="services-card-right">
-                        <h3>Buy Property</h3>
-                        <p>Find and purchase your ideal property effortlessly with LandScope's trusted listings.</p>
-                        <a href="#">Learn More</a>
+            <div class="section-header">
+                <h2>Meet Our <span class="highlight">Experts</span></h2>
+                <p>Work with the best real estate professionals</p>
+            </div>
+            
+            <div id="agents-slider" class="slick">
+                <div class="agent-slide">
+                    <div class="agent-card">
+                        <div class="agent-image">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Michael Anderson">
+                            <div class="agent-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        <div class="agent-info">
+                            <h3>Michael Anderson</h3>
+                            <p class="agent-title">Luxury Property Specialist</p>
+                            <p class="agent-stats">
+                                <span><i class="fas fa-home"></i> 150+ Properties Sold</span>
+                                <span><i class="fas fa-star"></i> 4.9/5 Rating</span>
+                            </p>
+                            <a href="#contact" class="btn-contact">Contact Agent</a>
+                        </div>
                     </div>
                 </div>
 
-                <div>
-                    <div class="fa fa-chart-line"></div>
-                    <div class="services-card-right">
-                        <h3>Investing</h3>
-                        <p>Make smart real estate investments and grow your wealth with expert guidance on LandScope.</p>
-                        <a href="#">Learn More</a>
+                <div class="agent-slide">
+                    <div class="agent-card">
+                        <div class="agent-image">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Sarah Martinez">
+                            <div class="agent-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        <div class="agent-info">
+                            <h3>Sarah Martinez</h3>
+                            <p class="agent-title">Investment Property Expert</p>
+                            <p class="agent-stats">
+                                <span><i class="fas fa-home"></i> 200+ Properties Sold</span>
+                                <span><i class="fas fa-star"></i> 4.8/5 Rating</span>
+                            </p>
+                            <a href="#contact" class="btn-contact">Contact Agent</a>
+                        </div>
                     </div>
                 </div>
 
-                <div>
-                    <div class="fa fa-building"></div>
-                    <div class="services-card-right">
-                        <h3>List a Property</h3>
-                        <p></p>
-                        <p>Showcase your property to potential buyers and maximize exposure with LandScope's easy listing process.</p>
-                        <a href="#">Learn More</a>
+                <div class="agent-slide">
+                    <div class="agent-card">
+                        <div class="agent-image">
+                            <img src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="David Thompson">
+                            <div class="agent-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        <div class="agent-info">
+                            <h3>David Thompson</h3>
+                            <p class="agent-title">Commercial Real Estate Specialist</p>
+                            <p class="agent-stats">
+                                <span><i class="fas fa-home"></i> 120+ Properties Sold</span>
+                                <span><i class="fas fa-star"></i> 4.9/5 Rating</span>
+                            </p>
+                            <a href="#contact" class="btn-contact">Contact Agent</a>
+                        </div>
                     </div>
                 </div>
 
-                <div>
-                    <div class="fa fa-search"></div>
-                    <div class="services-card-right">
-                        <h3>Property Locator</h3>
-                        <p>Description likhta jaaaaaaa</p>
-                        <a href="#">Learn More</a>
+                <div class="agent-slide">
+                    <div class="agent-card">
+                        <div class="agent-image">
+                            <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Emily Chen">
+                            <div class="agent-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        <div class="agent-info">
+                            <h3>Emily Chen</h3>
+                            <p class="agent-title">New Development Specialist</p>
+                            <p class="agent-stats">
+                                <span><i class="fas fa-home"></i> 180+ Properties Sold</span>
+                                <span><i class="fas fa-star"></i> 4.7/5 Rating</span>
+                            </p>
+                            <a href="#contact" class="btn-contact">Contact Agent</a>
+                        </div>
                     </div>
                 </div>
 
-                <div>
-                    <div class="fa fa-mobile-alt"></div>
-                    <div class="services-card-right">
-                        <h3>Stated Apps</h3>
-                        <p>Effortlessly find your ideal property with LandScope's advanced property locator, designed to match your specific needs.</p>
-                        <a href="#">Learn More</a>
+                <div class="agent-slide">
+                    <div class="agent-card">
+                        <div class="agent-image">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="James Wilson">
+                            <div class="agent-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        <div class="agent-info">
+                            <h3>James Wilson</h3>
+                            <p class="agent-title">Residential Property Expert</p>
+                            <p class="agent-stats">
+                                <span><i class="fas fa-home"></i> 160+ Properties Sold</span>
+                                <span><i class="fas fa-star"></i> 4.8/5 Rating</span>
+                            </p>
+                            <a href="#contact" class="btn-contact">Contact Agent</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#contact" class="btn-primary">Work With Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="animate__animated animate__fadeIn">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="section-header text-left">
+                        <h2>About <span class="highlight">LandScope</span></h2>
+                        <p class="subtitle">Your Trusted Partner in Real Estate Excellence Since 2010</p>
+                    </div>
+                    
+                    <p class="about-description">
+                        At LandScope, we believe that finding the perfect property is about more than just four walls and a roof – it's about discovering a place where memories are made and dreams come true. With over a decade of experience in the real estate market, we've helped thousands of clients find their ideal properties.
+                    </p>
+
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">1500+</span>
+                            <span class="stat-label">Properties Sold</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Expert Agents</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Expert Market Analysis</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Personalized Service</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Global Network</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 Support</span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn-primary">Get in Touch</a>
+                </div>
+
+                <div class="about-image-grid">
+                    <div class="image-container main-image">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" alt="Modern Office">
+                    </div>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1573167243872-43c6433b9d40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Team Meeting">
+                    </div>
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1577415124269-fc1140a69e91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Property Handover">
+                    </div>
+                </div>
+            </div>
+
+            <div class="values-section">
+                <h3>Our Core Values</h3>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <i class="fas fa-handshake"></i>
+                        <h4>Integrity</h4>
+                        <p>We maintain the highest standards of integrity in all our dealings, ensuring transparency and trust.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Excellence</h4>
+                        <p>We strive for excellence in every aspect of our service, delivering outstanding results.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-users"></i>
+                        <h4>Client Focus</h4>
+                        <p>Your success is our priority. We're dedicated to exceeding your expectations.</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Innovation</h4>
+                        <p>We embrace innovation and technology to provide cutting-edge real estate solutions.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="testimonials">
+    <section id="testimonials" class="animate__animated animate__fadeIn">
         <div class="container">
-            <h2>What Our CLients Say</h2>
-            <div id="testimonials-slider">
-                <div>
-                    <blockquote>
-                        <p>LandScope made my home-buying experience seamless and stress-free! The agent was knowledgeable and attentive, ensuring I found the perfect property. Highly recommended!</p>
-                    </blockquote>
-                    <div class="testimonials-caption">
-                        <img src="Assets/person1.jpg" alt="Client1">
-                        <p>Andrew Tate</p>
+            <div class="section-header">
+                <h2>Client <span class="highlight">Testimonials</span></h2>
+                <p>What our valued clients say about us</p>
+            </div>
+
+            <div id="testimonials-slider" class="slick">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>
+                            "Working with LandScope was an absolute pleasure. Their expertise and dedication made our home-buying journey smooth and enjoyable. The attention to detail and personalized service exceeded our expectations."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Sarah Johnson">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>First-time Homebuyer</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div>
-                    <blockquote>
-                        <p>Investing through LandScope has been a game changer for me. Their expert guidance and market insights have made my investments not only profitable but also enjoyable</p>
-                    </blockquote>
-                    <div class="testimonials-caption">
-                        <img src="Assets/person1.jpg" alt="Client2">
-                        <p>Tristan Tate</p>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>
+                            "As an investor, I appreciate LandScope's market insights and professional approach. They helped me identify lucrative opportunities and maximize my real estate portfolio's value. Truly outstanding service!"
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Michael Roberts">
+                            <div class="author-info">
+                                <h4>Michael Roberts</h4>
+                                <p>Property Investor</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div>
-                    <blockquote>
-                        <p>I listed my property with LandScope and was amazed by the quick results. Their team was professional, responsive, and helped me get a great deal. I couldn't be happier!</p>
-                    </blockquote>
-                    <div class="testimonials-caption">
-                        <img src="Assets/person1.jpg" alt="Client3">
-                        <p>Sheikh Shahab</p>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>
+                            "The team at LandScope went above and beyond to sell our property. Their marketing strategy and negotiation skills helped us get the best price. We couldn't be happier with the results!"
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Emily Chen">
+                            <div class="author-info">
+                                <h4>Emily Chen</h4>
+                                <p>Property Seller</p>
+                            </div>
+                        </div>
                     </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>
+                            "LandScope's expertise in luxury properties is unmatched. They understood our specific requirements and found us the perfect home. Their attention to detail and professionalism made all the difference."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="David Thompson">
+                            <div class="author-info">
+                                <h4>David Thompson</h4>
+                                <p>Luxury Home Buyer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-stats">
+                <div class="stat-box">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-text">Happy Clients</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">4.9</span>
+                    <span class="stat-text">Average Rating</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-text">Success Rate</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="animate__animated animate__fadeIn">
         <div class="container">
-            <h2>Contact Us</h2>
-            <div class="flex">
-                <div id="form-container">
-                    <h3>Contact Here</h3>
-                    <form>
-                        <label for="name">Name</label>
-                        <input type="text" id="name"/>
+            <div class="section-header">
+                <h2>Get in <span class="highlight">Touch</span></h2>
+                <p>We're here to help with all your real estate needs</p>
+            </div>
 
-                        <label for="email">Email</label>
-                        <input type="text" id="email"/>
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
 
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject"/>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
 
-                        <label for="message">Message</label>
-                        <textarea id="message">Write your message....</textarea>
+                        <div class="form-group">
+                            <label for="interest">I'm Interested In</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select your interest</option>
+                                <option value="buying">Buying a Property</option>
+                                <option value="selling">Selling a Property</option>
+                                <option value="renting">Renting a Property</option>
+                                <option value="investing">Real Estate Investment</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
 
-                        <button class="rounded">Send Message</button>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your requirements" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Send Message</button>
                     </form>
                 </div>
 
-                <div id="address-container">
-                    <label >Address</label>
-                    <address>
-                        CB1242 Range Road
-                    </address>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-header">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Visit Our Office</h3>
+                        </div>
+                        <p>123 Real Estate Avenue</p>
+                        <p>Business District, Suite 789</p>
+                        <p>New York, NY 10001</p>
+                    </div>
 
-                    <label >Phone</label>
-                    <a href="#">123-123-123</a>
+                    <div class="info-card">
+                        <div class="info-header">
+                            <i class="fas fa-phone-alt"></i>
+                            <h3>Call Us</h3>
+                        </div>
+                        <p>Main: <a href="tel:+12125551234">+1 (212) 555-1234</a></p>
+                        <p>Support: <a href="tel:+12125555678">+1 (212) 555-5678</a></p>
+                        <p>Fax: +1 (212) 555-9012</p>
+                    </div>
 
-                    <label>Email</label>
-                    <a href="#">abc@gmail.com</a>
+                    <div class="info-card">
+                        <div class="info-header">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email Us</h3>
+                        </div>
+                        <p>Info: <a href="mailto:info@landscope.com">info@landscope.com</a></p>
+                        <p>Support: <a href="mailto:support@landscope.com">support@landscope.com</a></p>
+                        <p>Sales: <a href="mailto:sales@landscope.com">sales@landscope.com</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-header">
+                            <i class="fas fa-clock"></i>
+                            <h3>Business Hours</h3>
+                        </div>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
             </div>
+
+            <!-- <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.25436351647!2d-74.11976373946229!3d40.69766374932386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1647043099265!5m2!1sen!2s"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div> -->
         </div>
     </section>
 
-    <footer id="foooter">
-        <div class="flex container">
-            <div class="footer-about">
-                <h5>About Stated</h5>
-                <p>Land Scope is a premier real estate platform dedicated to connecting buyers and sellers through innovative technology and personalized service. We strive to make the property transaction process transparent and efficient, ensuring our clients find their ideal properties with ease and confidence.</p>
-            </div>
-
-            <div class="footer-quick-links">
-                <h5>Quick Links</h5>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-subscribe">
-                <h5>Subscribe to out News Letter</h5>
-                <div id="subscribe-container">
-                    <input type="text" placeholder="Enter Email"/>
-                    <button class="right-rounded">Send</button>
-                </div>
-
-                <h5 class="follow-us">Follow Us</h5>
-                <ul>
-                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                </ul>
-            </div>
-        </div>
-
-        <small>
-            Copyright &copy; 2024 All rights reserved
-        </small>
-    </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
     <script>
         $(function(){
             let headerElem=$('header');
             let logo=$('#logo');
             let navMenu=$('#nav-menu');
-            let navToggle=$('nav-toggle');
+            let navToggle=$('#nav-toggle');
 
             $('#properties-slider').slick({
-                slidesToShow: 4,
+                slidesToShow: 1,
                 slidesToScroll: 1,
-                prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
-                nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
+                arrows: true,
+                fade: true,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+                dots: true,
+                adaptiveHeight: true,
+                cssEase: 'ease-in-out',
                 responsive: [
                     {
-                        breakpoint: 1100,
+                        breakpoint: 768,
                         settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 1,
-                            infinite: true,
-                        }
-                    },
-                    {
-                        breakpoint: 767,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                            infinite: true,
-                        }
-                    },
-                    {
-                        breakpoint: 530,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            infinite: true,
+                            arrows: true,
+                            dots: true
                         }
                     }
                 ]
-           });
-
-           $('#testimonials-slider').slick({
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                prevArrow: '<a href="#" class="slick-arrow slick-prev"><</a>',
-                nextArrow: '<a href="#" class="slick-arrow slick-next">></a>'
-           });
-
-           navToggle.on('click', () => {
-               navMenu.css('right', '0');
-           });
-
-           $('#close-flyout').on('click', () => {
-                navMenu.css('right', '-100%');
-           });
-
-           $(document).on('click', (e) => {
-               let target = $(e.target);
-               if (!(target.closest('#nav-toggle').length > 0 || target.closest('#nav-menu').length > 0)) {
-                   navMenu.css('right', '-100%');
-               }
-           });
-
-           $(document).scroll(() => {
-               let scrollTop = $(document).scrollTop();
-
-               if (scrollTop > 0) {
-                   navMenu.addClass('is-sticky');
-                   logo.css('color', '#000');
-                   headerElem.css('background', '#fff');
-                   navToggle.css('border-color', '#000');
-                   navToggle.find('.strip').css('background-color', '#000');
-               } else {
-                   navMenu.removeClass('is-sticky');
-                   logo.css('color', '#fff');
-                   headerElem.css('background', 'transparent');
-                   navToggle.css('bordre-color', '#fff');
-                   navToggle.find('.strip').css('background-color', '#fff');
-               }
-
-               headerElem.css(scrollTop >= 200 ? {'padding': '0.5rem', 'box-shadow': '0 -4px 10px 1px #fff', 'background-color':'#534440',} : {'padding': '1rem 0', 'box-shadow': 'none','background-color':'#534440' ,'color':'#ccc',});
-           
-               headerElem.find('#logo').css(scrollTop >= 200 ? {'color': '#fff'} : {'color': '#fff'}); // Change color for <a> elements
-                headerElem.find('#nav-manu a').css(scrollTop >= 200 ? {'color': '#FBF0F4'} : {'color': '#FBF0F4'}); // Change color for nav-menu items
             });
 
-           $(document).trigger('scroll');
+            $('#agents-slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+                dots: true,
+                adaptiveHeight: true,
+                cssEase: 'ease-in-out',
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: true,
+                            dots: true
+                        }
+                    }
+                ]
+            });
+
+            $('#testimonials-slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                fade: true,
+                autoplay: true,
+                autoplaySpeed: 6000,
+                prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+                dots: true,
+                adaptiveHeight: true,
+                cssEase: 'ease-in-out',
+                centerMode: true,
+                centerPadding: '0',
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: true,
+                            dots: true,
+                            centerMode: false
+                        }
+                    }
+                ]
+            });
+
+            // Handle scroll events for header
+            $(document).scroll(() => {
+                let scrollTop = $(document).scrollTop();
+
+                if (scrollTop > 0) {
+                    navMenu.addClass('is-sticky');
+                    logo.css('color', '#000');
+                    headerElem.css('background', '#fff');
+                    navToggle.css('border-color', '#000');
+                    navToggle.find('.strip').css('background-color', '#000');
+                } else {
+                    navMenu.removeClass('is-sticky');
+                    logo.css('color', '#fff');
+                    headerElem.css('background', 'transparent');
+                    navToggle.css('border-color', '#fff');
+                    navToggle.find('.strip').css('background-color', '#fff');
+                }
+
+                headerElem.css(scrollTop >= 200 ? 
+                    {'padding': '0.5rem', 'box-shadow': '0 -4px 10px 1px #fff'} : 
+                    {'padding': '1rem 0', 'box-shadow': 'none'}
+                );
+            });
+
+            // Trigger initial scroll
+            $(document).trigger('scroll');
         });
     </script>
 </body>
